@@ -10,7 +10,7 @@ const Login = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    fetch("http://localhost:8001/auth/login", {
+    fetch("https://survey-tg4p.onrender.com/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

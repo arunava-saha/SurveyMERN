@@ -10,7 +10,7 @@ const Survey = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    fetch("http://localhost:8001/user/survey", {
+    fetch("https://survey-tg4p.onrender.com/user/survey", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

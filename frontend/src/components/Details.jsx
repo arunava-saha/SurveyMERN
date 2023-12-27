@@ -5,7 +5,7 @@ const Details = () => {
   const { id } = useParams();
   const [item, setItem] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:8001/user/1/${id}`)
+    fetch(`https://survey-tg4p.onrender.com/user/1/${id}`)
       .then((res) => res.json())
       .then((result) => {
         setItem(result.data);

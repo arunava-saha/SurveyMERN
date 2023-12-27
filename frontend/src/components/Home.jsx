@@ -4,7 +4,7 @@ import { Card } from "./Card";
 const Home = () => {
   const [datas, setDatas] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:8001/user")
+    fetch("https://survey-tg4p.onrender.com/user")
       .then((res) => res.json())
       .then((data) => {
         setDatas(data.data);
